@@ -1,6 +1,6 @@
 {
 "companyName": "DefaultCompany",
-"productName": "SafeWork",
+"productName": "MyAlienShooter",
 "dataUrl": "WebGL1.0.data.unityweb",
 "wasmCodeUrl": "WebGL1.0.wasm.code.unityweb",
 "wasmFrameworkUrl": "WebGL1.0.wasm.framework.unityweb",
@@ -8,5 +8,6 @@
 "graphicsAPI": ["WebGL 1.0"],
 "webglContextAttributes": {"preserveDrawingBuffer": false},
 "splashScreenStyle": "Dark",
-"backgroundColor": "#231F20"
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"}
 }
