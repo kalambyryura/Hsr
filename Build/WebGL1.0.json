@@ -1,6 +1,6 @@
 {
 "companyName": "DefaultCompany",
-"productName": "MyAlienShooter",
+"productName": "SafeWork",
 "dataUrl": "WebGL1.0.data.unityweb",
 "wasmCodeUrl": "WebGL1.0.wasm.code.unityweb",
 "wasmFrameworkUrl": "WebGL1.0.wasm.framework.unityweb",
