@@ -1,9 +1,9 @@
 {
 "companyName": "DefaultCompany",
 "productName": "SafeWork",
-"dataUrl": "WebGL1.0.data.unityweb",
-"wasmCodeUrl": "WebGL1.0.wasm.code.unityweb",
-"wasmFrameworkUrl": "WebGL1.0.wasm.framework.unityweb",
+"dataUrl": "WebGL1.0(2).data.unityweb",
+"wasmCodeUrl": "WebGL1.0(2).wasm.code.unityweb",
+"wasmFrameworkUrl": "WebGL1.0(2).wasm.framework.unityweb",
 "TOTAL_MEMORY": 268435456,
 "graphicsAPI": ["WebGL 1.0"],
 "webglContextAttributes": {"preserveDrawingBuffer": false},
