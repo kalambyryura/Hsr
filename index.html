@@ -10,11 +10,37 @@
     <script src="Build/UnityLoader.js"></script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/HsrOld.json", {onProgress: UnityProgress});
+
+	  <style>
+
+	  #gameContainer{
+	  float: left;
+	  }
+	  #main{
+	  float: right;
+	  }
+
+	  </style>
+
+	  function fl(value)
+	  {
+			gameInstance.SendMessage("Main Camera","ctrl",value);
+	  }
     </script>
   </head>
   <body>
     <div class="webgl-content">
       <div id="gameContainer" style="width: 1280px; height: 720px"></div>
+
+	  <div id = "main"><select onchange="f1(this.value)">
+	  <option value = ""></option>
+	  <option value = "1">sphere</option>
+	  <option value = "2">cube</option>
+	  <option value = "3">capsule</option>
+	  <option value = "4">showall</option>
+	  <option value = "5">hideall</option>
+	  </select>
+	  </div>
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
