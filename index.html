@@ -39,13 +39,14 @@
   },
   onProgress: MyProgressFunction,
   Module: {
-    gameInstance.SendMessage("Managers","ctrl",1);
+    onRuntimeInitialized: MyInitializationCallbackFunction,
   },
 });
 
 
 	  function fl(value)
 	  {
+			//var gameInstance = UnityLoader.instantiate("gameContainer", "Build/HsrOld.json", {onProgress: UnityProgress});
 			gameInstance.SendMessage("Managers","ctrl",value);
 	  }
     </script>
