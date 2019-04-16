@@ -25,13 +25,14 @@
 	var gameInstance = UnityLoader.instantiate("gameContainer", "Build/HsrOld.json", {onProgress: UnityProgress});
 
 		function UnityProgress(gameInstance, progress) {
+		var myVar = localStorage['myKey'] || '0';
 		 	if (progress == 1)
-				gameInstance.SendMessage("Managers","ctrl", window.myParam);
+				gameInstance.SendMessage("Managers","ctrl", myVar);
 		}
 
 	  function fl(value)
 	  {
-			window.myParam = value;
+			localStorage['myKey'] = value;
 			///gameInstance.SendMessage("Managers","ctrl",value);
 	  }
     </script>
