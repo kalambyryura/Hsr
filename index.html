@@ -25,14 +25,14 @@
 	var gameInstance = UnityLoader.instantiate("gameContainer", "Build/HsrOld.json", {onProgress: UnityProgress});
 
 		function UnityProgress(gameInstance, progress) {
-		var myVar = localStorage['myKey'] || '0';
+		var myVar = localStorage['quest'] || '0';
 		 	if (progress == 1)
 				gameInstance.SendMessage("Managers","ctrl", myVar);
 		}
 
 	  function fl(value)
 	  {
-			localStorage['myKey'] = value;
+			localStorage['quest'] = value;
 			///gameInstance.SendMessage("Managers","ctrl",value);
 	  }
     </script>
@@ -42,14 +42,10 @@
     <div class="webgl-content">
       <div id="gameContainer" style="width: 1280px; height: 720px"></div>
 
-	  <div id = "main"><select onchange="fl(this.value)">
-	  <option value = ""></option>
-	  <option value = "1">sphere</option>
-	  <option value = "2">cube</option>
-	  <option value = "3">capsule</option>
-	  <option value = "4">showall</option>
-	  <option value = "5">hideall</option>
-	  </select>
+	  <div id = "main">
+	   <p><input type="button" value="Проверить1" onclick="fl(1)"></p>
+	   <p><input type="button" value="Проверить2" onclick="fl(2)"></p>
+	   <p><input type="button" value="Проверить3" onclick="fl(3)"></p>
 	  </div>
 
       <div class="footer">
