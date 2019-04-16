@@ -26,17 +26,15 @@
 
 		function UnityProgress(gameInstance, progress) {
 		 	if (progress == 1)
-				gameInstance.SendMessage("Managers","ctrl", "1");
+				gameInstance.SendMessage("Managers","ctrl", window.myParam);
 		}
 
-		function func()
-		{
-			gameInstance.SendMessage("Managers","ctrl", "1");
-		}
 	  function fl(value)
 	  {
+			window.myParam = value;
+			alert(window.myParam);
 			//
-			gameInstance.SendMessage("Managers","ctrl",value);
+			///gameInstance.SendMessage("Managers","ctrl",value);
 	  }
     </script>
 
