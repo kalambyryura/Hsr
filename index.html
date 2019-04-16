@@ -21,25 +21,19 @@
 	</style>
 
     <script>
-	 var myParam;
-	 var gameInstance = UnityLoader.instantiate("gameContainer", "Build/HsrOld.json", {onProgress: UnityProgress});
 
-        $(
+	var gameInstance = UnityLoader.instantiate("gameContainer", "Build/HsrOld.json", {onProgress: UnityProgress});
 
-			function UnityProgress(gameInstance, progress) {
-		 		if (progress == 1)
-					gameInstance.SendMessage("Managers","ctrl", myParam);
-			}
+		function UnityProgress(gameInstance, progress) {
+		 	if (progress == 1)
+				gameInstance.SendMessage("Managers","ctrl", window.myParam);
+		}
 
-			function fl(value)
-			{
-				myParam = value;
-				////alert(myParam);
-				//
-				///gameInstance.SendMessage("Managers","ctrl",value);
-			}
-		  }
-	  );
+	  function fl(value)
+	  {
+			window.myParam = value;
+			///gameInstance.SendMessage("Managers","ctrl",value);
+	  }
     </script>
 
   </head>
