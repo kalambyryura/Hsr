@@ -26,9 +26,13 @@
 
 		function UnityProgress(gameInstance, progress) {
 		 	if (progress == 1)
-			alert( 'После' );
+				setTimeout(func, 1000);
 		}
 
+		function func()
+		{
+			alert( 'После' );
+		}
 	  function fl(value)
 	  {
 			//
